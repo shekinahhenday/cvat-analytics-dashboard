@@ -1,0 +1,154 @@
+project_id,project_name,label_id,label_name,annotation_count
+311417,test_coco_keypoints,5951089,z,1
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832901,Weed_broadleafed,1546
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832896,leaf,27019
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832897,Stem,4645
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832902,Weed_narrowleafed,257
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5835453,discard,26
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726520,leaf,317351
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726522,Flower_spike,12227
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5728106,stem,33536
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726524,Weed_broadleafed,1804
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726523,Fruit_spikelets,1102
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726525,Weed_narrowleafed,320
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375294,Weed_broadleafed,7760
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375296,Weed_narrowleafed,387
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375292,leaf,5962
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375293,stem,2076
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375231,stem,125365
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375232,Weed_broadleafed,49139
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375230,leaf,627446
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375234,Weed_narrowleafed,4364
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976846,flower_bud,31175
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976843,Flower,4712
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976844,Fruit/Pod,19874
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976845,Discard,74
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375192,leaf,193837
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375193,stem,35962
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375197,Weed_broadleafed,14803
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375198,Weed_narrowleafed,879
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967748,Flower_bud,69
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967323,Discard,66
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967747,Flower,64
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967069,pod/fruit,25
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375085,leaf,229747
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375086,stem,47755
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937319,Flower,2945
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375087,Weed_broadleafed,74622
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375088,Weed_narrowleafed,9604
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937320,Flower_bud,1848
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937310,Fruit/Pod,81959
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5949042,Discard,26
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374588,leaf,1055809
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374612,Weed_broadleafed,16925
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374610,flower_open,4181
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374591,stem,26063
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5844868,Flower_bud,1730
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374613,Weed_narrowleafed,1404
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5844859,Fruit_pod,540
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374614,discard,3
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374557,leaf,288831
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374562,Weed_broadleafed,18119
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374558,stem,23849
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374560,flower,414
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374563,Weed_narrowleafed,1582
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5419081,Flower_closed,3434
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374561,fruit/pod,20169
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373226,Weed_broadleafed,10009
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373220,stem,11380
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373219,leaf,40548
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373227,Weed_narrowleafed,905
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373221,Fruit_pod,3
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373224,Flower_dry,2
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373222,Flower_open,2
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373223,Flower_closed,47
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373210,stem,15342
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373209,leaf,46147
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373211,Flower_panicle,5710
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373212,Weed_broadleafed,10559
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373213,Weed_narrowleafed,680
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373214,discard,4
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373134,Weed_broadleafed,1753
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373135,Weed_narrowleafed,809
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373131,Plant_millet,181
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373133,Stem_tiller,47
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373132,Stem_main,22
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373120,Flower_panicle,17103
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373119,stem,28386
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373118,leaf,52222
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373138,Weed_broadleafed,8386
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373139,Weed_narrowleafed,1785
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373140,discard,11
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368241,Weed_narrowleafed,3559
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368240,Weed_broadleafed,2499
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368237,Plant_maize,101
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368239,Stem_tiller,1
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364843,Weed_broadleafed,1883
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364840,Flower_tassel,4864
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364837,leaf,70836
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364838,stem,11967
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364841,Flower_silk,1397
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364839,Fruit_cob,2154
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364844,Weed_narrowleafed,839
+280639,ImageSafari_Maize_PlantPart_Segmentation,5628236,discard,1
+278471,Cvat testing,5354536,soil,1
+278471,Cvat testing,5324500,Weed_broadleafed,2
+278471,Cvat testing,5324495,Plant_maize,1
+272718,ImageSafari_Maize,5256593,Weed_broadleafed,2430
+272718,ImageSafari_Maize,5256599,Plant_maize,379
+272718,ImageSafari_Maize,5256600,Stem_main,82
+272718,ImageSafari_Maize,5256601,Stem_tiller,73
+272718,ImageSafari_Maize,5256594,Weed_narrowleafed,2196
+272718,ImageSafari_Maize,5255173,leaf,139772
+272718,ImageSafari_Maize,5259837,discard,19
+272718,ImageSafari_Maize,5256591,Flower_tassel,3959
+272718,ImageSafari_Maize,5259832,stem,12541
+272718,ImageSafari_Maize,5255176,Fruit_cob,1179
+272718,ImageSafari_Maize,5256592,Flower_silk,696
+263773,Image_Safari_Sorghum,5160836,Discard,63
+263773,Image_Safari_Sorghum,5182855,Fruit_grain,101655
+263773,Image_Safari_Sorghum,5182851,Flower_panicle,128
+263773,Image_Safari_Sorghum,5017929,Plant_sorghum,1828
+263773,Image_Safari_Sorghum,5017931,Weed_broadleafed,19810
+263773,Image_Safari_Sorghum,5130048,Stem_main,34
+263773,Image_Safari_Sorghum,5130050,Stem_Tiller,53
+263773,Image_Safari_Sorghum,5017942,Weed_narrowleafed,4939
+252495,ImageSafari Pre-annotation experiment,4797689,leaf,108
+252495,ImageSafari Pre-annotation experiment,4797690,stem,17
+252495,ImageSafari Pre-annotation experiment,4797693,weed,2
+232685,Artemis - Climbing beans,4374017,beanplant,16937
+223989,Image Safari: Common bean disease identification test,4239966,BCMV,21
+223989,Image Safari: Common bean disease identification test,4239964,ALS,988
+223989,Image Safari: Common bean disease identification test,4239965,ANT,171
+223989,Image Safari: Common bean disease identification test,4239963,CBBB,183
+223989,Image Safari: Common bean disease identification test,4239967,Rust,16
+218385,Image Safari: single-pass annotation,4135930,leaf,305613
+218385,Image Safari: single-pass annotation,4135933,fruit/pod,42570
+218385,Image Safari: single-pass annotation,4135931,stem,112650
+218385,Image Safari: single-pass annotation,4135934,weed,80469
+218385,Image Safari: single-pass annotation,4135935,flower bud,3633
+218385,Image Safari: single-pass annotation,4135932,flower,1606
+218385,Image Safari: single-pass annotation,4294670,DISCARD IMAGE,1
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104922,leaf,72357
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104926,flower bud,626
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104923,stem,17428
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104924,flower,1358
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104925,fruit,82
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,4077715,weed,6641
+205789,Image Safari: 2-pass annotation stage 2,3858430,stem,11369
+205789,Image Safari: 2-pass annotation stage 2,3858432,fruit,481
+205789,Image Safari: 2-pass annotation stage 2,3858429,leaf,22569
+205789,Image Safari: 2-pass annotation stage 2,3858431,flower,857
+205789,Image Safari: 2-pass annotation stage 2,3860137,flower bud,2428
+205789,Image Safari: 2-pass annotation stage 2,3858433,weed,920
+201743,Image Safari: 2-pass annotation stage 1,4029910,Foreground weed,566
+201743,Image Safari: 2-pass annotation stage 1,3747260,Foreground crop,650
+201743,Image Safari: 2-pass annotation stage 1,3747261,Plant part,1215
+201743,Image Safari: 2-pass annotation stage 1,4030708,DISCARD IMAGE,8
+196866,Image safari annotation time estimation,3643673,stem,414
+196866,Image safari annotation time estimation,3643669,leaf,2201
+196866,Image safari annotation time estimation,3643671,grain,47
+196866,Image safari annotation time estimation,3643672,flower,109
+196866,Image safari annotation time estimation,3648613,residue,20
+196866,Image safari annotation time estimation,3643670,pod,30
+193478,Image safari demo project 1,3567945,foreground crop,282

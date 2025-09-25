@@ -1,0 +1,301 @@
+project_id,project_name,label_id,label_name,shape_type,annotation_count
+311417,test_coco_keypoints,5951089,z,polyline,1
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832901,Weed_broadleafed,points,1546
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832896,leaf,points,27019
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832897,Stem,points,4645
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5832902,Weed_narrowleafed,points,257
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,5835453,discard,points,26
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726520,leaf,points,146083
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726522,Flower_spike,points,11633
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5728106,stem,points,10991
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726524,Weed_broadleafed,points,652
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726523,Fruit_spikelets,points,1079
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726525,Weed_narrowleafed,points,42
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726520,leaf,polygon,171268
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5728106,stem,polygon,22545
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726522,Flower_spike,polygon,594
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726524,Weed_broadleafed,polygon,1152
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726525,Weed_narrowleafed,polygon,278
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,5726523,Fruit_spikelets,polygon,23
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375292,leaf,points,2872
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375293,stem,points,310
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375296,Weed_narrowleafed,points,110
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375294,Weed_broadleafed,points,1595
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375294,Weed_broadleafed,polygon,3932
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375296,Weed_narrowleafed,polygon,191
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375292,leaf,polygon,767
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375293,stem,polygon,1515
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375292,leaf,mask,2554
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375294,Weed_broadleafed,mask,2262
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375293,stem,mask,322
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,5375296,Weed_narrowleafed,mask,98
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375231,stem,points,118870
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375232,Weed_broadleafed,points,35193
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375230,leaf,points,597254
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375234,Weed_narrowleafed,points,2701
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976846,flower_bud,points,31660
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976843,Flower,points,4762
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976844,Fruit/Pod,points,20150
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5976845,Discard,points,74
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375230,leaf,rectangle,1
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375232,Weed_broadleafed,polygon,11485
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375234,Weed_narrowleafed,polygon,1318
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375230,leaf,polygon,5909
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375231,stem,polygon,6806
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375232,Weed_broadleafed,mask,4763
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375230,leaf,mask,33934
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375231,stem,mask,2148
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,5375234,Weed_narrowleafed,mask,572
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375192,leaf,points,181095
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375193,stem,points,32845
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375197,Weed_broadleafed,points,13051
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375198,Weed_narrowleafed,points,788
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967748,Flower_bud,points,69
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967323,Discard,points,65
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967747,Flower,points,64
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5967069,pod/fruit,points,25
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375192,leaf,polygon,1727
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375193,stem,polygon,2662
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375197,Weed_broadleafed,polygon,1177
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375198,Weed_narrowleafed,polygon,58
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375192,leaf,mask,11027
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375193,stem,mask,479
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375197,Weed_broadleafed,mask,575
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,5375198,Weed_narrowleafed,mask,34
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375085,leaf,points,206763
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375086,stem,points,40582
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937319,Flower,points,2945
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375087,Weed_broadleafed,points,60959
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375088,Weed_narrowleafed,points,8373
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937320,Flower_bud,points,1848
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5937310,Fruit/Pod,points,81959
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5949042,Discard,points,26
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375085,leaf,rectangle,1
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375085,leaf,polygon,3990
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375086,stem,polygon,5216
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375087,Weed_broadleafed,polygon,9136
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375088,Weed_narrowleafed,polygon,796
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375085,leaf,mask,18993
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375087,Weed_broadleafed,mask,4527
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375086,stem,mask,1957
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,5375088,Weed_narrowleafed,mask,435
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374588,leaf,points,986290
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374612,Weed_broadleafed,points,12433
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374610,flower_open,points,3486
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374591,stem,points,9822
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5844868,Flower_bud,points,1730
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374613,Weed_narrowleafed,points,1035
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5844859,Fruit_pod,points,540
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374614,discard,points,3
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374588,leaf,rectangle,1
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374591,stem,polygon,12548
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374588,leaf,polygon,1668
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374612,Weed_broadleafed,polygon,3181
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374613,Weed_narrowleafed,polygon,223
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374610,flower_open,polygon,404
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374588,leaf,mask,67850
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374612,Weed_broadleafed,mask,1311
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374613,Weed_narrowleafed,mask,146
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374591,stem,mask,3693
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,5374610,flower_open,mask,291
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374557,leaf,points,257492
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374562,Weed_broadleafed,points,9021
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374558,stem,points,8536
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374560,flower,points,412
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374563,Weed_narrowleafed,points,779
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5419081,Flower_closed,points,3431
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374561,fruit/pod,points,20166
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374558,stem,polygon,11193
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374562,Weed_broadleafed,polygon,6814
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374563,Weed_narrowleafed,polygon,595
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374557,leaf,polygon,989
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5419081,Flower_closed,polygon,3
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374561,fruit/pod,polygon,3
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374560,flower,polygon,2
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374562,Weed_broadleafed,mask,2284
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374563,Weed_narrowleafed,mask,208
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374558,stem,mask,4120
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,5374557,leaf,mask,30350
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373226,Weed_broadleafed,polygon,4507
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373220,stem,polygon,6580
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373219,leaf,polygon,3305
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373227,Weed_narrowleafed,polygon,410
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373221,Fruit_pod,polygon,3
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373224,Flower_dry,polygon,1
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373220,stem,mask,1311
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373226,Weed_broadleafed,mask,3122
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373219,leaf,mask,18766
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373227,Weed_narrowleafed,mask,280
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373222,Flower_open,mask,1
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373223,Flower_closed,mask,1
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373226,Weed_broadleafed,points,2380
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373227,Weed_narrowleafed,points,215
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373219,leaf,points,18477
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373220,stem,points,3489
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373222,Flower_open,points,1
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373223,Flower_closed,points,46
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,5373224,Flower_dry,points,1
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373210,stem,polygon,9972
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373209,leaf,polygon,10611
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373211,Flower_panicle,polygon,2246
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373212,Weed_broadleafed,polygon,7232
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373213,Weed_narrowleafed,polygon,403
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373212,Weed_broadleafed,points,2110
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373209,leaf,points,19494
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373210,stem,points,3258
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373213,Weed_narrowleafed,points,219
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373211,Flower_panicle,points,2135
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373214,discard,polygon,4
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373209,leaf,mask,16042
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373211,Flower_panicle,mask,1329
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373210,stem,mask,2112
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373212,Weed_broadleafed,mask,1217
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,5373213,Weed_narrowleafed,mask,58
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373134,Weed_broadleafed,points,1753
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373135,Weed_narrowleafed,points,809
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373131,Plant_millet,points,181
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373133,Stem_tiller,points,47
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,5373132,Stem_main,points,22
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373120,Flower_panicle,polygon,5258
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373119,stem,polygon,16864
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373118,leaf,polygon,5526
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373138,Weed_broadleafed,polygon,5752
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373139,Weed_narrowleafed,polygon,1328
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373140,discard,polygon,10
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373119,stem,mask,4704
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373120,Flower_panicle,mask,5177
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373118,leaf,mask,20998
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373138,Weed_broadleafed,mask,487
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373139,Weed_narrowleafed,mask,12
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373118,leaf,points,25698
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373120,Flower_panicle,points,6668
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373119,stem,points,6818
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373138,Weed_broadleafed,points,2147
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373140,discard,mask,1
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,5373139,Weed_narrowleafed,points,445
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368241,Weed_narrowleafed,points,3559
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368240,Weed_broadleafed,points,2499
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368237,Plant_maize,points,101
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,5368239,Stem_tiller,points,1
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364843,Weed_broadleafed,polygon,1194
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364840,Flower_tassel,polygon,1915
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364837,leaf,polygon,1538
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364838,stem,polygon,4690
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364841,Flower_silk,polygon,325
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364839,Fruit_cob,polygon,283
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364844,Weed_narrowleafed,polygon,174
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364837,leaf,mask,21977
+280639,ImageSafari_Maize_PlantPart_Segmentation,5628236,discard,polygon,1
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364839,Fruit_cob,mask,230
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364843,Weed_broadleafed,mask,161
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364841,Flower_silk,mask,298
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364840,Flower_tassel,mask,758
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364838,stem,mask,1683
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364844,Weed_narrowleafed,mask,41
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364837,leaf,points,47321
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364839,Fruit_cob,points,1641
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364838,stem,points,5594
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364841,Flower_silk,points,774
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364840,Flower_tassel,points,2191
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364844,Weed_narrowleafed,points,624
+280639,ImageSafari_Maize_PlantPart_Segmentation,5364843,Weed_broadleafed,points,528
+278471,Cvat testing,5354536,soil,polygon,1
+278471,Cvat testing,5324500,Weed_broadleafed,polygon,2
+278471,Cvat testing,5324495,Plant_maize,polygon,1
+272718,ImageSafari_Maize,5256593,Weed_broadleafed,polygon,2430
+272718,ImageSafari_Maize,5256599,Plant_maize,polygon,379
+272718,ImageSafari_Maize,5256600,Stem_main,polygon,82
+272718,ImageSafari_Maize,5256601,Stem_tiller,polygon,73
+272718,ImageSafari_Maize,5256594,Weed_narrowleafed,polygon,2196
+272718,ImageSafari_Maize,5255173,leaf,polygon,139770
+272718,ImageSafari_Maize,5259837,discard,polygon,19
+272718,ImageSafari_Maize,5256591,Flower_tassel,polygon,3959
+272718,ImageSafari_Maize,5259832,stem,polygon,12541
+272718,ImageSafari_Maize,5255176,Fruit_cob,polygon,1179
+272718,ImageSafari_Maize,5256592,Flower_silk,polygon,696
+272718,ImageSafari_Maize,5255173,leaf,rectangle,2
+263773,Image_Safari_Sorghum,5160836,Discard,polygon,63
+263773,Image_Safari_Sorghum,5182855,Fruit_grain,polygon,101655
+263773,Image_Safari_Sorghum,5182851,Flower_panicle,polygon,128
+263773,Image_Safari_Sorghum,5017929,Plant_sorghum,polygon,1827
+263773,Image_Safari_Sorghum,5017931,Weed_broadleafed,polygon,19810
+263773,Image_Safari_Sorghum,5130048,Stem_main,polygon,34
+263773,Image_Safari_Sorghum,5130050,Stem_Tiller,polygon,53
+263773,Image_Safari_Sorghum,5017942,Weed_narrowleafed,polygon,4939
+263773,Image_Safari_Sorghum,5017929,Plant_sorghum,rectangle,1
+252495,ImageSafari Pre-annotation experiment,4797689,leaf,polygon,108
+252495,ImageSafari Pre-annotation experiment,4797690,stem,polygon,17
+252495,ImageSafari Pre-annotation experiment,4797693,weed,polygon,2
+232685,Artemis - Climbing beans,4374017,beanplant,rectangle,16937
+223989,Image Safari: Common bean disease identification test,4239966,BCMV,ellipse,3
+223989,Image Safari: Common bean disease identification test,4239964,ALS,ellipse,217
+223989,Image Safari: Common bean disease identification test,4239965,ANT,ellipse,41
+223989,Image Safari: Common bean disease identification test,4239963,CBBB,ellipse,20
+223989,Image Safari: Common bean disease identification test,4239964,ALS,polygon,384
+223989,Image Safari: Common bean disease identification test,4239965,ANT,polygon,56
+223989,Image Safari: Common bean disease identification test,4239963,CBBB,polygon,48
+223989,Image Safari: Common bean disease identification test,4239967,Rust,polygon,8
+223989,Image Safari: Common bean disease identification test,4239966,BCMV,polygon,6
+223989,Image Safari: Common bean disease identification test,4239967,Rust,ellipse,1
+223989,Image Safari: Common bean disease identification test,4239963,CBBB,rectangle,115
+223989,Image Safari: Common bean disease identification test,4239966,BCMV,rectangle,12
+223989,Image Safari: Common bean disease identification test,4239964,ALS,rectangle,387
+223989,Image Safari: Common bean disease identification test,4239965,ANT,rectangle,74
+223989,Image Safari: Common bean disease identification test,4239967,Rust,rectangle,7
+218385,Image Safari: single-pass annotation,4135930,leaf,polygon,318782
+218385,Image Safari: single-pass annotation,4135933,fruit/pod,polygon,50814
+218385,Image Safari: single-pass annotation,4135931,stem,polygon,121375
+218385,Image Safari: single-pass annotation,4135934,weed,polygon,91410
+218385,Image Safari: single-pass annotation,4135935,flower bud,polygon,4081
+218385,Image Safari: single-pass annotation,4135932,flower,polygon,1779
+218385,Image Safari: single-pass annotation,4294670,DISCARD IMAGE,rectangle,5
+218385,Image Safari: single-pass annotation,4294670,DISCARD IMAGE,polygon,4
+218385,Image Safari: single-pass annotation,4135931,stem,polyline,1
+218385,Image Safari: single-pass annotation,4135931,stem,mask,12
+218385,Image Safari: single-pass annotation,4135930,leaf,mask,10
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104922,leaf,mask,71751
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104926,flower bud,mask,607
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104923,stem,mask,15342
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104924,flower,mask,1325
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104923,stem,polygon,2084
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104922,leaf,polygon,605
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104926,flower bud,polygon,19
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104924,flower,polygon,33
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104925,fruit,mask,68
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104925,fruit,polygon,14
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104922,leaf,polyline,1
+216409,Image Safari: 2-pass annotation stage 2 - only crops,4104923,stem,polyline,2
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,4077715,weed,mask,6477
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,4077715,weed,polygon,155
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,4077715,weed,polyline,9
+205789,Image Safari: 2-pass annotation stage 2,3858430,stem,mask,9867
+205789,Image Safari: 2-pass annotation stage 2,3858432,fruit,mask,438
+205789,Image Safari: 2-pass annotation stage 2,3858429,leaf,mask,21646
+205789,Image Safari: 2-pass annotation stage 2,3858430,stem,polygon,1396
+205789,Image Safari: 2-pass annotation stage 2,3858431,flower,mask,795
+205789,Image Safari: 2-pass annotation stage 2,3858429,leaf,polygon,892
+205789,Image Safari: 2-pass annotation stage 2,3858431,flower,polygon,62
+205789,Image Safari: 2-pass annotation stage 2,3860137,flower bud,mask,2336
+205789,Image Safari: 2-pass annotation stage 2,3860137,flower bud,polygon,92
+205789,Image Safari: 2-pass annotation stage 2,3858433,weed,mask,887
+205789,Image Safari: 2-pass annotation stage 2,3858429,leaf,polyline,31
+205789,Image Safari: 2-pass annotation stage 2,3858430,stem,polyline,106
+205789,Image Safari: 2-pass annotation stage 2,3858433,weed,polygon,33
+205789,Image Safari: 2-pass annotation stage 2,3858432,fruit,polygon,43
+201743,Image Safari: 2-pass annotation stage 1,4029910,Foreground weed,polygon,566
+201743,Image Safari: 2-pass annotation stage 1,3747260,Foreground crop,polygon,650
+201743,Image Safari: 2-pass annotation stage 1,3747261,Plant part,polygon,1215
+201743,Image Safari: 2-pass annotation stage 1,4030708,DISCARD IMAGE,polygon,8
+196866,Image safari annotation time estimation,3643673,stem,mask,319
+196866,Image safari annotation time estimation,3643669,leaf,mask,1920
+196866,Image safari annotation time estimation,3643671,grain,polygon,25
+196866,Image safari annotation time estimation,3643673,stem,polygon,95
+196866,Image safari annotation time estimation,3643669,leaf,polygon,281
+196866,Image safari annotation time estimation,3643671,grain,mask,22
+196866,Image safari annotation time estimation,3643672,flower,mask,91
+196866,Image safari annotation time estimation,3648613,residue,mask,18
+196866,Image safari annotation time estimation,3643672,flower,polygon,18
+196866,Image safari annotation time estimation,3648613,residue,polygon,2
+196866,Image safari annotation time estimation,3643670,pod,mask,30
+193478,Image safari demo project 1,3567945,foreground crop,polygon,23
+193478,Image safari demo project 1,3567945,foreground crop,mask,259

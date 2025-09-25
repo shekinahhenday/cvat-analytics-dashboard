@@ -1,0 +1,133 @@
+project_id,project_name,task_id,task_name,task_status,task_created,task_updated
+311417,test_coco_keypoints,1618062,t1,annotation,2025-09-09 11:29:24.801962+00:00,2025-09-09 11:43:40.163005+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1581868,Cassava_PlantPart_Point_segmentation_batch8,annotation,2025-08-21 07:47:12.710485+00:00,2025-08-25 23:56:24.286760+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1580069,Cassava_PlantPart_Point_segmentation_batch7,annotation,2025-08-20 12:39:49.666981+00:00,2025-08-30 12:21:39.569042+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1579956,Cassava_PlantPart_Point_segmentation_batch5,annotation,2025-08-20 12:12:15.863101+00:00,2025-08-22 01:10:25.466277+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1579608,Cassava_PlantPart_Point_segmentation_batch6,annotation,2025-08-20 10:00:19.784272+00:00,2025-08-25 02:35:08.706780+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1577825,Cassava_PlantPart_Point_segmentation_batch4,annotation,2025-08-19 14:53:03.319325+00:00,2025-08-22 00:02:33.433396+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1577744,Cassava_PlantPart_Point_segmentation_batch2,annotation,2025-08-19 14:13:22.470960+00:00,2025-08-20 22:56:24.850063+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1577741,Cassava_PlantPart_Point_segmentation_batch3,annotation,2025-08-19 14:12:31.865880+00:00,2025-08-22 05:48:37.560506+00:00
+305167,ImageSafari_Cassava_PlantPart_segmentation_2025-08-19,1577717,Cassava_PlantPart_Point_segmentation_batch1,annotation,2025-08-19 14:04:35.077118+00:00,2025-08-21 14:04:49.976697+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1577437,Wheat_Plant_Part_Point_Annotation_vegetative_stage_Batch4,annotation,2025-08-19 12:21:49.279415+00:00,2025-08-24 23:34:33.891490+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1569957,Wheat_Plant_Part_Point_Annotation_vegetative_stage_Batch3,annotation,2025-08-14 14:54:31.257395+00:00,2025-08-20 01:42:12.180027+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1569806,Wheat_Plant_Part_Point_Annotation_vegetative_stage_Batch2,annotation,2025-08-14 13:43:03.358630+00:00,2025-08-19 23:24:36.806112+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1568822,Wheat_Plant_Part_Point_Annotation_Batch1,annotation,2025-08-14 05:13:12.902525+00:00,2025-09-09 12:14:58.408921+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1545328,Wheat_Plant_Part_Pseudo_Annotation_vegetative_stage_Batch1,annotation,2025-08-04 10:25:08.190675+00:00,2025-09-04 00:52:09.725416+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1539174,Wheat_Plant_Part_Pseudo_Annotation_Batch2,annotation,2025-07-31 14:50:57.025993+00:00,2025-08-22 04:33:57.326327+00:00
+299663,ImageSafari_Wheat_Pseudo_segmentation_2025-07-31,1538998,Wheat_Plant_Part_Pseudo_Annotation_Batch1,annotation,2025-07-31 13:46:40.227294+00:00,2025-08-16 07:30:32.256352+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1593271,SweetPotato_PlantPart_Point-Annotation_batch4,annotation,2025-08-27 10:08:02.344383+00:00,2025-08-28 06:47:34.528240+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1592977,SweetPotato_PlantPart_Point-Annotation_batch3,annotation,2025-08-27 08:09:21.014679+00:00,2025-08-27 09:05:14.006465+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1591146,SweetPotato_PlantPart_Point-Annotation_batch2,annotation,2025-08-26 13:19:35.930964+00:00,2025-08-27 08:07:53.385281+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1528362,SweetPotato_Plant_Part_Semantic_Annotation,annotation,2025-07-25 04:18:28.050747+00:00,2025-08-03 02:52:36.393415+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1452104,SweetPotato_PlantPart_Scribble-Annotation,annotation,2025-06-17 11:31:24.500274+00:00,2025-07-09 02:15:55.101374+00:00
+281471,ImageSafari_SweetPotato_PlantPart_Segmentation,1438288,SweetPotato_PlantPart_Point-Annotation,annotation,2025-06-10 08:55:37.129516+00:00,2025-07-07 13:46:13.789982+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1590368,PigeonPeas_PlantPart_Segmentation_Early_Stage,annotation,2025-08-26 07:24:13.697700+00:00,2025-09-24 12:44:35.177717+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1588835,PigeonPeas_PlantPart_Segmentation_Flowering_Stage,annotation,2025-08-25 13:13:13.197215+00:00,2025-09-24 12:45:10.938885+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1588680,Pigeonpeas_PlantPart_Annotation_Harvest_Stage,annotation,2025-08-25 12:11:25.533736+00:00,2025-09-24 12:35:19.382691+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1525823,Pigeonpeas_Plant_Part_Semantic_Annotation,annotation,2025-07-23 14:26:38.705777+00:00,2025-09-15 00:55:59.823064+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1450903,PigeonPeas_PlantPart_Scribble-Annotation,annotation,2025-06-17 01:01:28.755572+00:00,2025-09-15 00:55:59.823064+00:00
+281463,ImageSafari_PigeonPeas_PlantPart_Segmentation,1438255,PigeonPeas_PlantPart_Point-Annotation,annotation,2025-06-10 08:41:40.755392+00:00,2025-09-15 00:55:59.823064+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1597447,IrishPotato_PlantPart_Point-Annotation_Batch4,annotation,2025-08-29 07:01:48.104483+00:00,2025-09-24 03:37:58.837790+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1595876,IrishPotato_PlantPart_Point-Annotation_Batch3,annotation,2025-08-28 12:54:23.992841+00:00,2025-09-17 15:05:21.428274+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1595177,IrishPotato_PlantPart_Point-Annotation_Batch2,annotation,2025-08-28 07:06:29.983238+00:00,2025-09-24 03:41:48.240840+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1524204,IrishPotato_Plant_Part_Semantic_Annotation,annotation,2025-07-23 00:34:44.274014+00:00,2025-09-12 04:40:22.019437+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1449976,IrishPotato_PlantPart_Scribble-Annotation,annotation,2025-06-16 13:49:25.266123+00:00,2025-09-12 04:40:22.019437+00:00
+281455,ImageSafari_IrishPotato_PlantPart_Segmentation,1438210,IrishPotato_PlantPart_Point-Annotation,annotation,2025-06-10 08:24:19.320779+00:00,2025-09-12 04:40:22.019437+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1588294,SoyBeans_PlantPart_Annotation_Early_Stage,annotation,2025-08-25 09:54:30.899659+00:00,2025-09-20 06:24:59.883692+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1584698,SoyBeans_PlantPart_Annotation_flowering,annotation,2025-08-22 13:33:59.043841+00:00,2025-09-18 07:45:05.997455+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1584479,SoyBeans_PlantPart_Annotation_harvest,annotation,2025-08-22 11:33:28.787356+00:00,2025-09-17 05:51:30.033546+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1517126,Soybeans_Plant_Part_Semantic_Annotation,annotation,2025-07-18 12:43:50.832559+00:00,2025-09-09 06:42:30.274071+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1447687,SoyBeans_PlantPart_Scribble-Annotation,annotation,2025-06-14 22:45:26.096136+00:00,2025-09-09 06:42:30.274071+00:00
+281442,ImageSafari_SoyBeans_PlantPart_Segmentation,1438155,SoyBeans_PlantPart_Point-Annotation,annotation,2025-06-10 08:04:07.267639+00:00,2025-09-09 06:42:30.274071+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1582029,GroundNuts_PlantPart_Point-Annotation Batch5,annotation,2025-08-21 08:49:13.109192+00:00,2025-09-09 08:06:01.851441+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1582018,GroundNuts_PlantPart_Point-Annotation Batch4,annotation,2025-08-21 08:41:40.962747+00:00,2025-09-10 08:05:03.877769+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1581848,GroundNuts_PlantPart_Point-Annotation Batch3,annotation,2025-08-21 07:37:49.554601+00:00,2025-09-04 10:49:38.364289+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1508177,Groundnuts_Plant_Part_Semantic_Annotation,annotation,2025-07-14 10:16:23.807444+00:00,2025-08-21 12:28:41.988850+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1452169,GroundNuts_PlantPart_Point-Annotation Batch2,annotation,2025-06-17 12:01:57.114851+00:00,2025-08-22 01:56:47.948429+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1446979,GroundNuts_PlantPart_Scribble_Annotation,annotation,2025-06-14 03:47:46.125260+00:00,2025-08-21 12:28:41.988850+00:00
+281426,ImageSafari_GroundNuts_PlantPart_Segmentation,1438134,GroundNuts_PlantPart_Point-Annotation Batch1,annotation,2025-06-10 07:52:22.747223+00:00,2025-08-21 12:28:41.988850+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1584142,Cowpea_PlantPart_Point-Annotation_earlystage,annotation,2025-08-22 09:27:09.668752+00:00,2025-09-14 07:46:29.175139+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1583938,Cowpea_PlantPart_Point-Annotation_flowering,annotation,2025-08-22 07:31:30.009993+00:00,2025-09-13 13:41:15.709978+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1582225,Cowpea_PlantPart_Point-Annotation_harvest/maturity,annotation,2025-08-21 09:59:41.719419+00:00,2025-09-11 09:16:32.532052+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1505781,Cowpeas_Plant_Part_Semantic_Annotation,annotation,2025-07-12 00:35:30.203566+00:00,2025-07-28 10:13:55.585209+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1445996,Cowpea_PlantPart_Scribble_Annotation,annotation,2025-06-13 11:02:37.949931+00:00,2025-07-04 03:04:06.026501+00:00
+281422,ImageSafari_Cowpea_PlantPart_Segmentation,1438089,Cowpea_PlantPart_Point-Annotation,annotation,2025-06-10 07:31:42.226610+00:00,2025-06-19 01:51:34.938503+00:00
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,1499843,CommonBeans_Plant_Part_Semantic_Annotation,annotation,2025-07-09 10:54:42.399297+00:00,2025-07-23 11:08:40.129938+00:00
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,1445378,Commonbean_PlantPart_Scribble_Annotation,annotation,2025-06-13 06:05:28.046564+00:00,2025-07-01 07:55:23.263796+00:00
+281320,ImageSafari_Commonbean_PlantPart_Segmentation,1437479,Commonbean_PlantPart_Point-Annotation,annotation,2025-06-10 01:20:41.337985+00:00,2025-06-30 12:37:06.409075+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1560057,Sorghum_Pseudo_segmentation_Batch_2,annotation,2025-08-10 02:02:42.029338+00:00,2025-08-19 11:58:34.827860+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1480608,Sorghum_Plant_Part_Semantic_Annotation,annotation,2025-07-01 02:46:03.950775+00:00,2025-07-22 11:35:41.478206+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1453762,Sorghum_Plant-Part_Scribble_Annotation_Batch2,annotation,2025-06-18 06:29:28.539978+00:00,2025-07-14 15:05:13.462109+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1453596,Sorghum_Plant-Part_Point_Annotation_Batch2,annotation,2025-06-18 04:58:57.238571+00:00,2025-07-11 00:11:05.856403+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1443695,Sorghum_Plant-Part_Scribble_Annotation_Batch1,annotation,2025-06-12 11:25:16.590378+00:00,2025-07-09 06:02:58.283618+00:00
+281319,ImageSafari_Sorghum_Plant-Part_Segmentation,1437475,Sorghum_Plant-Part_Point_Annotation_Batch1,annotation,2025-06-10 01:12:26.516905+00:00,2025-07-09 06:02:58.283618+00:00
+281315,ImageSafari_PearlMillet_Tiller_Point_Annotation,1437461,PearlMillet_Tiller_Point_Annotation,annotation,2025-06-09 23:57:19.546609+00:00,2025-06-22 03:47:31.264354+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1463613,PearlMillet_Plant_Part_Semantic_Annotation,annotation,2025-06-23 00:32:16.409987+00:00,2025-07-29 15:43:05.756358+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1453645,PearlMillet_Plant_Part_Scribble_Annotation_Batch3,annotation,2025-06-18 05:05:16.534176+00:00,2025-07-13 02:55:03.698557+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1453572,PearlMillet_Plant_Part_Point_Annotation_Batch3,annotation,2025-06-18 04:47:26.145452+00:00,2025-07-10 08:13:52.556359+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1447688,PearlMillet_Plant_Part_Point_Annotation_Batch2,annotation,2025-06-14 22:50:11.683019+00:00,2025-07-05 15:37:29.148790+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1443226,PearlMillet_Plant_Part_Scribble_Annotation_Batch1,annotation,2025-06-12 08:01:20.749705+00:00,2025-06-30 06:10:19.334971+00:00
+281314,ImageSafari_PearlMillet_PlantPart_Segmentation,1437448,PearlMillet_Plant_Part_Point_Annotation_Batch1,annotation,2025-06-09 23:44:10.045952+00:00,2025-06-29 05:36:09.844092+00:00
+280977,ImageSafari_Maize_tillers_Point-Annotation&Scribble-Annotation,1435539,Plant_segmentation_tillers_Point_Annotation,annotation,2025-06-09 07:01:53.838081+00:00,2025-06-14 11:52:28.830782+00:00
+280639,ImageSafari_Maize_PlantPart_Segmentation,1462841,Maize_Plant-Part-Semantic-Segmentation,annotation,2025-06-22 00:43:51.425519+00:00,2025-07-20 01:57:36.101639+00:00
+280639,ImageSafari_Maize_PlantPart_Segmentation,1440361,Maize_Plant-Part-Scribble-Annotation,annotation,2025-06-11 06:12:52.895493+00:00,2025-07-16 11:08:03.275356+00:00
+280639,ImageSafari_Maize_PlantPart_Segmentation,1434466,Maize_Plant-Part-Point-Annotation-Batch2,annotation,2025-06-08 06:25:31.355053+00:00,2025-08-14 02:00:26.557577+00:00
+280639,ImageSafari_Maize_PlantPart_Segmentation,1434453,Maize_Plant-Part-Point-Annotation-Batch1,annotation,2025-06-08 05:45:38.811678+00:00,2025-07-16 11:08:03.275356+00:00
+278471,Cvat testing,1432646,semantic annotation,annotation,2025-06-06 09:42:55.012915+00:00,2025-06-06 13:22:29.688029+00:00
+278471,Cvat testing,1424413,Maize with Cob testing,annotation,2025-06-02 23:33:14.524141+00:00,2025-06-06 09:39:16.808928+00:00
+278471,Cvat testing,1423431,CVAT Testing,annotation,2025-06-02 11:39:31.614961+00:00,2025-06-06 09:39:16.808928+00:00
+272718,ImageSafari_Maize,1430800,Plant_segmentation_tillers Batch2,annotation,2025-06-05 11:28:52.153926+00:00,2025-06-11 03:10:01.529994+00:00
+272718,ImageSafari_Maize,1414619,Plant-Part-Pseudo-instantSegmentation Batch2,annotation,2025-05-28 06:52:52.225604+00:00,2025-06-11 00:17:12.544438+00:00
+272718,ImageSafari_Maize,1409542,Plant_segmentation_tillers_Batch1,annotation,2025-05-26 01:05:28.397741+00:00,2025-06-07 01:48:40.132745+00:00
+272718,ImageSafari_Maize,1401677,Plant-Part-Pseudo-instantSegmentation Batch1,annotation,2025-05-21 15:11:25.404487+00:00,2025-06-12 00:11:49.423558+00:00
+263773,Image_Safari_Sorghum,1379778,Sorghum_grain_segmentation,annotation,2025-05-12 07:46:32.413844+00:00,2025-06-04 23:25:26.435466+00:00
+263773,Image_Safari_Sorghum,1368246,Plant_segmentation_tillers,annotation,2025-05-06 10:34:56.571192+00:00,2025-05-30 09:12:31.148296+00:00
+263773,Image_Safari_Sorghum,1344292,Plant-segmentation,annotation,2025-04-25 05:40:50.177904+00:00,2025-05-26 23:50:13.422179+00:00
+252495,ImageSafari Pre-annotation experiment,1314355,Test krs Messy Photos,annotation,2025-04-11 10:19:45.883815+00:00,2025-04-11 10:35:34.030845+00:00
+252495,ImageSafari Pre-annotation experiment,1285783,Test1_preannotation_IS-14,annotation,2025-03-28 12:25:52.666625+00:00,2025-05-08 01:19:30.455850+00:00
+232685,Artemis - Climbing beans,1189145,Climbing_bean_plant_stand,annotation,2025-02-07 19:01:01.581641+00:00,2025-02-12 13:57:07.347800+00:00
+223989,Image Safari: Common bean disease identification test,1143604,Common bean disease identification,annotation,2025-01-16 07:48:07.282554+00:00,2025-01-18 03:52:21.935062+00:00
+218385,Image Safari: single-pass annotation,1300167,Sorghum,annotation,2025-04-04 14:49:11.904043+00:00,2025-06-16 08:45:02.442936+00:00
+218385,Image Safari: single-pass annotation,1299770,Pearl Millet,annotation,2025-04-04 12:42:03.896263+00:00,2025-04-28 08:24:43.623703+00:00
+218385,Image Safari: single-pass annotation,1233487,Sweet Potatoes,annotation,2025-02-28 08:38:03.142378+00:00,2025-05-22 23:55:49.391051+00:00
+218385,Image Safari: single-pass annotation,1233473,Pigeon Peas,annotation,2025-02-28 08:33:37.704905+00:00,2025-06-02 10:06:46.850569+00:00
+218385,Image Safari: single-pass annotation,1233469,Irish Potatoes,annotation,2025-02-28 08:32:22.992629+00:00,2025-07-12 01:19:02.366502+00:00
+218385,Image Safari: single-pass annotation,1233466,Groundnuts,annotation,2025-02-28 08:31:22.473753+00:00,2025-07-12 01:03:47.194005+00:00
+218385,Image Safari: single-pass annotation,1233464,Cowpeas,annotation,2025-02-28 08:29:38.005709+00:00,2025-04-25 03:51:24.915215+00:00
+218385,Image Safari: single-pass annotation,1233459,Beans,annotation,2025-02-28 08:27:29.654491+00:00,2025-06-02 11:34:14.334825+00:00
+218385,Image Safari: single-pass annotation,1233453,Soybeans,annotation,2025-02-28 08:15:09.777057+00:00,2025-04-20 11:08:39.595024+00:00
+218385,Image Safari: single-pass annotation,1195334,plant_part_seg_commonbean_podding_batch_4,annotation,2025-02-11 23:45:10.747396+00:00,2025-04-15 06:58:14.802439+00:00
+218385,Image Safari: single-pass annotation,1195333,plant_part_seg_commonbean_podding_batch_3,annotation,2025-02-11 23:43:17.038102+00:00,2025-05-08 13:06:16.936044+00:00
+218385,Image Safari: single-pass annotation,1195325,plant_part_seg_commonbean_podding_batch_2,annotation,2025-02-11 23:20:14.226707+00:00,2025-04-16 00:56:40.064786+00:00
+218385,Image Safari: single-pass annotation,1194774,plant_part_seg_commonbean_podding_batch_1,annotation,2025-02-11 15:40:10.997870+00:00,2025-05-15 15:54:46.927177+00:00
+218385,Image Safari: single-pass annotation,1161402,plant_part_seg_for_disease_annotation,annotation,2025-01-24 10:16:25.037908+00:00,2025-04-04 07:37:21.534358+00:00
+218385,Image Safari: single-pass annotation,1159310,demo task,annotation,2025-01-23 10:57:20.036458+00:00,2025-01-23 18:30:10.197330+00:00
+218385,Image Safari: single-pass annotation,1115898,Irish potatoes from Ellena single-pass samples 201 to 203,annotation,2024-12-30 09:14:38.033579+00:00,2025-01-23 18:30:10.197330+00:00
+216409,Image Safari: 2-pass annotation stage 2 - only crops,1107469,"Irish potatoes from Ellena samples 1 to 200 - crop tiles, part 3",annotation,2024-12-24 11:44:26.966077+00:00,2025-01-09 16:23:36.016610+00:00
+216409,Image Safari: 2-pass annotation stage 2 - only crops,1107468,"Irish potatoes from Ellena samples 1 to 200 - crop tiles, part 2",annotation,2024-12-24 11:43:31.513492+00:00,2025-01-10 14:25:33.294033+00:00
+216409,Image Safari: 2-pass annotation stage 2 - only crops,1107467,"Irish potatoes from Ellena samples 1 to 200 - crop tiles, part 1",annotation,2024-12-24 11:42:22.502044+00:00,2025-01-10 19:08:35.195334+00:00
+216409,Image Safari: 2-pass annotation stage 2 - only crops,1107465,"Irish potatoes from Ellena samples 1 to 200 - crop tiles, part 0",annotation,2024-12-24 11:41:34.921193+00:00,2025-01-08 03:28:02.583669+00:00
+216409,Image Safari: 2-pass annotation stage 2 - only crops,1105861,Pilot - Irish potatoes from Ellena samples 201 to 205 - crop tiles,annotation,2024-12-23 15:34:21.725745+00:00,2025-01-08 06:26:06.229525+00:00
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,1107483,"Irish potatoes from Ellena samples 1 to 200 - weed tiles, part 3",annotation,2024-12-24 11:56:54.717826+00:00,2025-01-04 02:19:42.433412+00:00
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,1107481,"Irish potatoes from Ellena samples 1 to 200 - weed tiles, part 2",annotation,2024-12-24 11:56:46.944969+00:00,2025-01-03 04:52:23.308167+00:00
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,1107480,"Irish potatoes from Ellena samples 1 to 200 - weed tiles, part 1",annotation,2024-12-24 11:56:36.685740+00:00,2025-01-05 08:33:36.767275+00:00
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,1107479,"Irish potatoes from Ellena samples 1 to 200 - weed tiles, part 0",annotation,2024-12-24 11:56:26.199527+00:00,2025-01-04 04:19:08.177963+00:00
+214886,Image Safari: 2-pass annotation stage 2 - only weeds,1105862,Pilot - Irish potatoes from Ellena samples 201 to 205 - weed tiles,annotation,2024-12-23 15:35:07.238457+00:00,2024-12-28 04:45:15.654024+00:00
+205789,Image Safari: 2-pass annotation stage 2,1046195,bush beans pipeline pilot tiles,annotation,2024-11-25 11:52:32.445518+00:00,2024-12-19 02:01:13.627394+00:00
+205789,Image Safari: 2-pass annotation stage 2,1040260,Bush beans 120 tiles,annotation,2024-11-22 11:54:19.870668+00:00,2025-01-10 12:53:10.027200+00:00
+201743,Image Safari: 2-pass annotation stage 1,1105663,Pilot - Irish potatoes from Ellena samples 201 to 205,annotation,2024-12-23 13:20:06.823088+00:00,2024-12-23 14:51:13.154851+00:00
+201743,Image Safari: 2-pass annotation stage 1,1070777,Irish potatoes from Ellena samples 1 to 200,annotation,2024-12-03 14:45:38.037454+00:00,2024-12-24 11:18:25.277335+00:00
+201743,Image Safari: 2-pass annotation stage 1,1045926,bush beans pipeline pilot,annotation,2024-11-25 10:11:35.550078+00:00,2024-12-12 11:41:56.383843+00:00
+201743,Image Safari: 2-pass annotation stage 1,1034554,Account testing,annotation,2024-11-20 11:50:37.936515+00:00,2024-12-12 11:41:56.383843+00:00
+201743,Image Safari: 2-pass annotation stage 1,1017153,Bush beans 120,annotation,2024-11-13 10:57:35.627523+00:00,2024-12-12 11:41:56.383843+00:00
+196866,Image safari annotation time estimation,1037124,Bush beans 120 tiles test,annotation,2024-11-21 11:39:49.781953+00:00,2024-11-21 11:48:29.354866+00:00
+196866,Image safari annotation time estimation,992400,Pigeon peas demo task,annotation,2024-10-31 15:55:18.602696+00:00,2024-11-01 08:39:38.494811+00:00
+196866,Image safari annotation time estimation,992349,millet 2,annotation,2024-10-31 15:20:16.525099+00:00,2024-11-02 04:37:27.571581+00:00
+196866,Image safari annotation time estimation,992336,millet 1,annotation,2024-10-31 15:17:16.470467+00:00,2024-11-02 16:40:34.903992+00:00
+196866,Image safari annotation time estimation,992317,sorghum 2,annotation,2024-10-31 15:12:23.960585+00:00,2024-11-01 14:11:06.124987+00:00
+196866,Image safari annotation time estimation,992311,sorghum 1,annotation,2024-10-31 15:11:44.938715+00:00,2024-11-01 12:00:15.675345+00:00
+196866,Image safari annotation time estimation,992308,pigeon peas 3,annotation,2024-10-31 15:11:05.803384+00:00,2024-11-02 12:20:35.562502+00:00
+196866,Image safari annotation time estimation,992306,pigeon peas 2,annotation,2024-10-31 15:10:24.652080+00:00,2024-11-02 04:44:32.177114+00:00
+196866,Image safari annotation time estimation,992298,pigeon peas 1,annotation,2024-10-31 15:07:11.781369+00:00,2024-11-01 23:40:27.818920+00:00
+193478,Image safari demo project 1,970967,Image safari cropping experiment,annotation,2024-10-22 14:40:23.717983+00:00,2024-11-01 13:25:24.920862+00:00
+193478,Image safari demo project 1,969876,Foreground crops 1,annotation,2024-10-22 08:51:20.562563+00:00,2024-10-29 08:48:59.610574+00:00
