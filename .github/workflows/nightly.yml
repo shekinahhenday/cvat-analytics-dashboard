@@ -39,7 +39,7 @@ jobs:
           ETL_MAX_TASKS_PER_PROJ: "0"
           ETL_MAX_JOBS_PER_TASK: "0"
         run: |
-          python cvat_to_metabase_full.py
+          python cvat_to_metabase_full.py 
 
       # - name: Run CVAT ETL
       #   env:
