@@ -28,15 +28,28 @@ jobs:
           echo '${{ secrets.GOOGLE_SA_JSON }}' > credentials.json
 
       # Run your main CVAT script (fast/nightly: no heavy annotation fetch)
-      - name: Run CVAT ETL
+      - name: Run CVAT ETL (fast nightly)
         env:
           CVAT_BASE_URL: ${{ secrets.CVAT_BASE_URL }}
           CVAT_API_TOKEN: ${{ secrets.CVAT_API_TOKEN }}
-          CVAT_ORG_HEADER: ${{ secrets.CVAT_ORG_HEADER }}   # optional
-          GSHEET_URL_CVAT: ${{ secrets.GSHEET_URL_CVAT }}   # Google Sheet URL where tabs live
-          ETL_FETCH_ANNOTATIONS: "0"   # keep nightly fast
+          CVAT_ORG_HEADER: ${{ secrets.CVAT_ORG_HEADER }}
+          GSHEET_URL_CVAT: ${{ secrets.GSHEET_URL_CVAT }}
+          ETL_FETCH_ANNOTATIONS: "0"
           ETL_MAX_PROJECTS: "0"
           ETL_MAX_TASKS_PER_PROJ: "0"
           ETL_MAX_JOBS_PER_TASK: "0"
         run: |
-          python scripts/cvat_to_metabase_full.py
+          python cvat_to_metabase_full.py
+
+      # - name: Run CVAT ETL
+      #   env:
+      #     CVAT_BASE_URL: ${{ secrets.CVAT_BASE_URL }}
+      #     CVAT_API_TOKEN: ${{ secrets.CVAT_API_TOKEN }}
+      #     CVAT_ORG_HEADER: ${{ secrets.CVAT_ORG_HEADER }}   # optional
+      #     GSHEET_URL_CVAT: ${{ secrets.GSHEET_URL_CVAT }}   # Google Sheet URL where tabs live
+      #     ETL_FETCH_ANNOTATIONS: "0"   # keep nightly fast
+      #     ETL_MAX_PROJECTS: "0"
+      #     ETL_MAX_TASKS_PER_PROJ: "0"
+      #     ETL_MAX_JOBS_PER_TASK: "0"
+      #   run: |
+      #     python scripts/cvat_to_metabase_full.py
