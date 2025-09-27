@@ -1,0 +1,51 @@
+name: CVAT Annotations (Wed & Sat, 02:00 UTC)
+
+on:
+  schedule:
+    - cron: "0 2 * * 3,6"   # Wednesdays (3) & Saturdays (6) at 02:00 UTC
+  workflow_dispatch:         # allow manual runs
+
+jobs:
+  run-annotations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create Google creds file
+        run: |
+          echo '${{ secrets.GOOGLE_SA_JSON }}' > credentials.json
+
+      - name: Run CVAT ETL (annotations ON)
+        env:
+          CVAT_BASE_URL: ${{ secrets.CVAT_BASE_URL }}
+          CVAT_API_TOKEN: ${{ secrets.CVAT_API_TOKEN }}
+          CVAT_ORG_HEADER: ${{ secrets.CVAT_ORG_HEADER }}
+          GSHEET_URL_CVAT: ${{ secrets.GSHEET_URL_CVAT }}
+
+          # Annotations ON for this job
+          ETL_FETCH_ANNOTATIONS: "1"
+
+          # Gentle pacing + retries to avoid 429s
+          ETL_REQUEST_SLEEP: "0.6"     # raise to 0.8–1.0 if rate-limited
+          ETL_RETRY_TOTAL: "6"
+          ETL_RETRY_BACKOFF: "1.0"
+
+          # Start conservative; remove/raise once you confirm runtime is OK
+          ETL_MAX_PROJECTS: "5"
+          ETL_MAX_TASKS_PER_PROJ: "10"
+          ETL_MAX_JOBS_PER_TASK: "30"
+        run: |
+          python cvat_to_metabase_full.py
