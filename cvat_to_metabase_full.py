@@ -363,14 +363,48 @@ sess.headers.update({
 })
 if ORG:
     sess.headers["X-Organization"] = ORG
+    # --- Robust retries for CVAT rate limits / hiccups ---
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
+# Optional knobs via env (have safe defaults)
+RETRY_TOTAL         = int(os.getenv("ETL_RETRY_TOTAL", "6") or "6")        # total retry attempts
+RETRY_BACKOFF       = float(os.getenv("ETL_RETRY_BACKOFF", "1.0") or "1.0") # wait grows: 1s, 2s, 4s, ...
+RETRY_STATUS_CODES  = [int(s) for s in (os.getenv("ETL_RETRY_STATUS", "429,500,502,503,504").split(","))]
+
+retry = Retry(
+    total=RETRY_TOTAL,
+    backoff_factor=RETRY_BACKOFF,
+    status_forcelist=RETRY_STATUS_CODES,
+    allowed_methods=["GET"],   # our script uses GETs for reads
+    raise_on_status=False,     # let requests hand the response back for our handling
+)
+
+adapter = HTTPAdapter(max_retries=retry)
+sess.mount("http://", adapter)
+sess.mount("https://", adapter)
+# --- end retries setup ---
 def get_all(endpoint, params=None, sleep=0.0):
     """Fetch all pages from DRF-style endpoints; also works for list/non-paginated."""
     url = urljoin(BASE, endpoint.lstrip("/"))
     out = []
     while url:
+        # r = sess.get(url, params=params, timeout=120)
+        # r.raise_for_status()
         r = sess.get(url, params=params, timeout=120)
+        # If server tells us how long to wait, respect it
+        if r.status_code == 429:
+            retry_after = r.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    time.sleep(float(retry_after))
+                except Exception:
+                    time.sleep(2)
         r.raise_for_status()
+        # small pacing sleep to avoid rate limits
+        if REQUEST_SLEEP:
+            time.sleep(REQUEST_SLEEP)
+
         data = r.json()
         if isinstance(data, dict) and "results" in data:
             out.extend(data["results"])
@@ -699,3 +733,4 @@ if SHEET_URL:
         print("Tip: ensure GSHEET_URL_CVAT is set and the Sheet is shared with the service account (Editor).")
 else:
     print("GSHEET_URL_CVAT not set; skipped Google Sheets upload.")
+
