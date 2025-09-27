@@ -396,22 +396,96 @@ def get_jobs(task_id):
         jobs = jobs[:MAX_JOBS_PER_TASK]
     return jobs
 
+# def get_project_labels(project_payload):
+#     """Prefer embedded labels; if absent, try labels endpoint (filter may or may not work)."""
+#     labels = project_payload.get("labels", []) or []
+#     if labels:
+#         return labels
+#     try:
+#         # Try filtering by project_id; some CVAT versions support it
+#         return get_all("/api/labels", params={"project_id": project_payload.get("id")})
+#     except Exception:
+#         # Fallback: fetch all labels and filter locally
+#         try:
+#             all_labels = get_all("/api/labels")
+#             pid = project_payload.get("id")
+#             return [L for L in all_labels if L.get("project_id") == pid]
+#         except Exception:
+#             return []
+
 def get_project_labels(project_payload):
-    """Prefer embedded labels; if absent, try labels endpoint (filter may or may not work)."""
-    labels = project_payload.get("labels", []) or []
-    if labels:
-        return labels
+    """
+    Try multiple ways to get labels for a project, to support different CVAT versions.
+    Return a list of label dicts with keys like: id, name/title, color, type.
+    """
+    pid = project_payload.get("id")
+
+    # 0) Embedded on the project payload
+    embedded = project_payload.get("labels") or []
+    if isinstance(embedded, list) and embedded:
+        return embedded
+
+    # 1) /api/projects/{id} (refresh payload; sometimes includes labels)
     try:
-        # Try filtering by project_id; some CVAT versions support it
-        return get_all("/api/labels", params={"project_id": project_payload.get("id")})
+        r = sess.get(urljoin(BASE, f"/api/projects/{pid}"), timeout=60)
+        if r.ok:
+            pr = r.json()
+            if isinstance(pr, dict):
+                labels = pr.get("labels") or []
+                if isinstance(labels, list) and labels:
+                    return labels
     except Exception:
-        # Fallback: fetch all labels and filter locally
-        try:
-            all_labels = get_all("/api/labels")
-            pid = project_payload.get("id")
-            return [L for L in all_labels if L.get("project_id") == pid]
-        except Exception:
-            return []
+        pass
+
+    # 2) /api/labels?project_id={id} (supported on many versions)
+    try:
+        labels = get_all("/api/labels", params={"project_id": pid})
+        if isinstance(labels, list) and labels:
+            return labels
+    except Exception:
+        pass
+
+    # 3) /api/projects/{id}/labels (exists in some builds)
+    try:
+        r = sess.get(urljoin(BASE, f"/api/projects/{pid}/labels"), timeout=60)
+        if r.ok:
+            data = r.json()
+            if isinstance(data, list) and data:
+                return data
+            if isinstance(data, dict) and data.get("results"):
+                return data["results"]
+    except Exception:
+        pass
+
+    # 4) Fallback via tasks → labels per task (merge unique by id/name)
+    try:
+        tasks = get_all("/api/tasks", params={"project_id": pid})
+        seen = {}
+        for t in tasks or []:
+            # direct task labels if present
+            if isinstance(t, dict) and isinstance(t.get("labels"), list) and t["labels"]:
+                for L in t["labels"]:
+                    key = L.get("id") or L.get("name") or L.get("title")
+                    if key and key not in seen:
+                        seen[key] = L
+            else:
+                # /api/labels?task_id={tid}
+                try:
+                    tlabs = get_all("/api/labels", params={"task_id": t.get("id")})
+                    for L in tlabs or []:
+                        key = L.get("id") or L.get("name") or L.get("title")
+                        if key and key not in seen:
+                            seen[key] = L
+                except Exception:
+                    continue
+        if seen:
+            return list(seen.values())
+    except Exception:
+        pass
+
+    # Nothing found
+    print(f"⚠️  No labels found for project [{pid}] {project_payload.get('name')}")
+    return []
 
 def get_job_annotations(job_id):
     """Pull annotations for a job. JSON keys: shapes, tracks, tags (each item has label_id)."""
@@ -454,16 +528,31 @@ for p in projects_raw:
     for L in labels or []:
         if not isinstance(L, dict):
             continue
-        label_catalog_rows.append({
-            "project_id": pid,
-            "project_name": pname,
-            "label_id": L.get("id"),
-            "label_name": L.get("name"),
-            "label_color": L.get("color"),
-            "label_type": L.get("type"),
-        })
-        if L.get("name"):
-            label_names.append(L["name"])
+        # label_catalog_rows.append({
+        #     "project_id": pid,
+        #     "project_name": pname,
+        #     "label_id": L.get("id"),
+        #     "label_name": L.get("name"),
+        #     "label_color": L.get("color"),
+        #     "label_type": L.get("type"),
+        # })
+        # if L.get("name"):
+        #     label_names.append(L["name"])
+    
+         label_name = L.get("name") or L.get("title")
+         label_catalog_rows.append({
+             "project_id": pid,
+             "project_name": pname,
+             "label_id": L.get("id"),
+             "label_name": label_name,
+             "label_color": L.get("color"),
+             "label_type": L.get("type"),  # may be None on some versions
+          })
+         if label_name:
+            label_names.append(label_name)
+
+
+
 
     # Tasks & Jobs
     tasks = get_tasks(pid)
@@ -638,5 +727,6 @@ if SHEET_URL:
         print("Tip: ensure GSHEET_URL_CVAT is set and the Sheet is shared with the service account (Editor).")
 else:
     print("GSHEET_URL_CVAT not set; skipped Google Sheets upload.")
+
 
 
