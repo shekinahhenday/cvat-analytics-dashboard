@@ -316,8 +316,7 @@
 # === CVAT → DataFrames → CSV + Google Sheets ===
 import os
 import time
-import json
-from collections import defaultdict, Counter
+from collections import Counter
 from datetime import datetime
 from urllib.parse import urljoin
 
@@ -333,22 +332,28 @@ from scripts.sheets_io import write_df_to_sheet
 # ---------------------------
 load_dotenv()
 
-raw_base = os.getenv("CVAT_BASE_URL", "").strip()
+raw_base = (os.getenv("CVAT_BASE_URL", "") or "").strip()
 if not raw_base:
     raise SystemExit("Missing CVAT_BASE_URL (e.g. https://app.cvat.ai). Set it in .env or GitHub Secrets.")
 if not raw_base.startswith(("http://", "https://")):
     raw_base = "https://" + raw_base
 BASE = raw_base.rstrip("/") + "/"
 
-API_TOKEN = os.getenv("CVAT_API_TOKEN")
+API_TOKEN = (os.getenv("CVAT_API_TOKEN", "") or "").strip()
+if API_TOKEN.lower().startswith("token "):
+    API_TOKEN = API_TOKEN[6:].strip()
 if not API_TOKEN:
     raise SystemExit("Missing CVAT_API_TOKEN. Set it in .env or GitHub Secrets.")
-ORG = os.getenv("CVAT_ORG_HEADER", "").strip() or None
+
+ORG = (os.getenv("CVAT_ORG_HEADER", "") or "").strip() or None
 
 # Optional limits
 MAX_PROJECTS = int(os.getenv("ETL_MAX_PROJECTS", "0") or "0")          # 0 = unlimited
 MAX_TASKS_PER_PROJ = int(os.getenv("ETL_MAX_TASKS_PER_PROJ", "0") or "0")
 MAX_JOBS_PER_TASK = int(os.getenv("ETL_MAX_JOBS_PER_TASK", "0") or "0")
+
+# Optional: skip heavy annotations on nightly runs
+FETCH_ANNOTATIONS = (os.getenv("ETL_FETCH_ANNOTATIONS", "0") or "0").strip().lower() in ("1", "true", "yes")
 
 # HTTP session
 sess = requests.Session()
@@ -396,23 +401,6 @@ def get_jobs(task_id):
         jobs = jobs[:MAX_JOBS_PER_TASK]
     return jobs
 
-# def get_project_labels(project_payload):
-#     """Prefer embedded labels; if absent, try labels endpoint (filter may or may not work)."""
-#     labels = project_payload.get("labels", []) or []
-#     if labels:
-#         return labels
-#     try:
-#         # Try filtering by project_id; some CVAT versions support it
-#         return get_all("/api/labels", params={"project_id": project_payload.get("id")})
-#     except Exception:
-#         # Fallback: fetch all labels and filter locally
-#         try:
-#             all_labels = get_all("/api/labels")
-#             pid = project_payload.get("id")
-#             return [L for L in all_labels if L.get("project_id") == pid]
-#         except Exception:
-#             return []
-
 def get_project_labels(project_payload):
     """
     Try multiple ways to get labels for a project, to support different CVAT versions.
@@ -457,33 +445,33 @@ def get_project_labels(project_payload):
     except Exception:
         pass
 
-    # 4) Fallback via tasks → labels per task (merge unique by id/name)
+    # 4) Fallback via tasks → labels per task (merge unique by id/name/title)
     try:
         tasks = get_all("/api/tasks", params={"project_id": pid})
         seen = {}
         for t in tasks or []:
             # direct task labels if present
-            if isinstance(t, dict) and isinstance(t.get("labels"), list) and t["labels"]:
-                for L in t["labels"]:
+            tl = t.get("labels")
+            if isinstance(tl, list) and tl:
+                for L in tl:
                     key = L.get("id") or L.get("name") or L.get("title")
                     if key and key not in seen:
                         seen[key] = L
-            else:
-                # /api/labels?task_id={tid}
-                try:
-                    tlabs = get_all("/api/labels", params={"task_id": t.get("id")})
-                    for L in tlabs or []:
-                        key = L.get("id") or L.get("name") or L.get("title")
-                        if key and key not in seen:
-                            seen[key] = L
-                except Exception:
-                    continue
+                continue
+            # /api/labels?task_id={tid}
+            try:
+                tlabs = get_all("/api/labels", params={"task_id": t.get("id")})
+                for L in tlabs or []:
+                    key = L.get("id") or L.get("name") or L.get("title")
+                    if key and key not in seen:
+                        seen[key] = L
+            except Exception:
+                continue
         if seen:
             return list(seen.values())
     except Exception:
         pass
 
-    # Nothing found
     print(f"⚠️  No labels found for project [{pid}] {project_payload.get('name')}")
     return []
 
@@ -525,34 +513,20 @@ for p in projects_raw:
     # Labels (catalog)
     labels = get_project_labels(p)
     label_names = []
-    for L in labels or []:
+    for L in (labels or []):
         if not isinstance(L, dict):
             continue
-        # label_catalog_rows.append({
-        #     "project_id": pid,
-        #     "project_name": pname,
-        #     "label_id": L.get("id"),
-        #     "label_name": L.get("name"),
-        #     "label_color": L.get("color"),
-        #     "label_type": L.get("type"),
-        # })
-        # if L.get("name"):
-        #     label_names.append(L["name"])
-    
-         label_name = L.get("name") or L.get("title")
-         label_catalog_rows.append({
-             "project_id": pid,
-             "project_name": pname,
-             "label_id": L.get("id"),
-             "label_name": label_name,
-             "label_color": L.get("color"),
-             "label_type": L.get("type"),  # may be None on some versions
-          })
-         if label_name:
+        label_name = L.get("name") or L.get("title")
+        label_catalog_rows.append({
+            "project_id": pid,
+            "project_name": pname,
+            "label_id": L.get("id"),
+            "label_name": label_name,
+            "label_color": L.get("color"),
+            "label_type": L.get("type"),  # may be None on some versions
+        })
+        if label_name:
             label_names.append(label_name)
-
-
-
 
     # Tasks & Jobs
     tasks = get_tasks(pid)
@@ -591,12 +565,8 @@ for p in projects_raw:
             job_status_counts[jstatus] += 1
 
             # Assignee might be dict or scalar
-            assignee = None
             a = j.get("assignee")
-            if isinstance(a, dict):
-                assignee = a.get("username") or a.get("email") or a.get("id")
-            else:
-                assignee = a
+            assignee = a.get("username") or a.get("email") or a.get("id") if isinstance(a, dict) else a
 
             jcreated = parse_iso(j.get("created_date") or j.get("created"))
             jupdated = parse_iso(j.get("updated_date") or j.get("updated"))
@@ -616,14 +586,16 @@ for p in projects_raw:
                 "job_duration_hours": duration_hours,
             })
 
-            # Annotation stats → label usage
-            try:
-                anns = get_job_annotations(jid)
-            except Exception:
-                anns = {}
+            # Annotation stats → label usage (optional)
+            anns = {}
+            if FETCH_ANNOTATIONS:
+                try:
+                    anns = get_job_annotations(jid)
+                except Exception:
+                    anns = {}
 
             for key in ("shapes", "tracks", "tags"):
-                for item in anns.get(key, []) or []:
+                for item in (anns.get(key, []) or []):
                     lab_id = item.get("label_id")
                     if lab_id is not None:
                         label_usage_counter[lab_id] += 1
@@ -691,7 +663,7 @@ df_user_workload  = pd.DataFrame(user_workload_rows)
 df_time_series    = pd.DataFrame(time_series_rows)
 
 # ---------------------------
-# Write CSVs (optional local backup)
+# (Optional) write local CSVs
 # ---------------------------
 df_projects.to_csv("cvat_projects_overview.csv", index=False)
 df_labels_catalog.to_csv("cvat_labels_catalog.csv", index=False)
@@ -727,6 +699,3 @@ if SHEET_URL:
         print("Tip: ensure GSHEET_URL_CVAT is set and the Sheet is shared with the service account (Editor).")
 else:
     print("GSHEET_URL_CVAT not set; skipped Google Sheets upload.")
-
-
-
