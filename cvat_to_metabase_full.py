@@ -385,6 +385,25 @@ adapter = HTTPAdapter(max_retries=retry)
 sess.mount("http://", adapter)
 sess.mount("https://", adapter)
 # --- end retries setup ---
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+REQUEST_SLEEP      = float(os.getenv("ETL_REQUEST_SLEEP", "0.3") or "0.3")  # << add this
+RETRY_TOTAL        = int(os.getenv("ETL_RETRY_TOTAL", "6") or "6")
+RETRY_BACKOFF      = float(os.getenv("ETL_RETRY_BACKOFF", "1.0") or "1.0")
+RETRY_STATUS_CODES = [int(s) for s in (os.getenv("ETL_RETRY_STATUS", "429,500,502,503,504").split(","))]
+
+retry = Retry(
+    total=RETRY_TOTAL,
+    backoff_factor=RETRY_BACKOFF,
+    status_forcelist=RETRY_STATUS_CODES,
+    allowed_methods=["GET"],
+    raise_on_status=False,
+)
+adapter = HTTPAdapter(max_retries=retry)
+sess.mount("http://", adapter)
+sess.mount("https://", adapter)
+
 def get_all(endpoint, params=None, sleep=0.0):
     """Fetch all pages from DRF-style endpoints; also works for list/non-paginated."""
     url = urljoin(BASE, endpoint.lstrip("/"))
@@ -734,3 +753,4 @@ if SHEET_URL:
         print("Tip: ensure GSHEET_URL_CVAT is set and the Sheet is shared with the service account (Editor).")
 else:
     print("GSHEET_URL_CVAT not set; skipped Google Sheets upload.")
+
